@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Avatar from "../components/Avatar";
+import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
+import { SearchIcon } from "@heroicons/react/outline";
+import Image from "next/image";
 
 export default function Home() {
 	return (
@@ -24,11 +27,35 @@ export default function Home() {
 					<p className='link'>Images</p>
 
 					{/* Icon */}
+					<ViewGridIcon className='h-10 w-10 p-1 rounded-full hover:bg-gray-100 cursor-pointer' />
 
 					{/* Avatar */}
 					<Avatar url='https://compassionate-leakey-e9b16b.netlify.app/images/IG_Sonny.jpeg' />
 				</div>
 			</header>
+			{/* Body */}
+
+			<form className='flex flex-col items-center mt-44 flex-grow '>
+				<Image
+					src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png'
+					height={100}
+					width={300}
+				/>
+				<div className='flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center'>
+					<SearchIcon className='h-5 mr-3' />
+					<input className='focus:outline-none flex-grow' type='text' />
+					<MicrophoneIcon className='h-5 mr-3' />
+				</div>
+
+				<div className='flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4'>
+					<button className='btn'>Google Search</button>
+
+					<button className='btn'>I'm Feeling Lucky</button>
+				</div>
+			</form>
+
+			{/* footer */}
 		</div>
 	);
+	q;
 }
