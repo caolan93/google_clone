@@ -37,7 +37,7 @@ export default function Home() {
 				</div>
 
 				{/* Right */}
-				<div className='flex space-x-4 items-center'>
+				<div className='flex space-x-4 items-center '>
 					<p className='link'>Gmail</p>
 					<p className='link'>Images</p>
 
@@ -50,7 +50,7 @@ export default function Home() {
 			</header>
 			{/* Body */}
 
-			<form className='flex flex-col items-center mt-auto flex-grow w-4/5'>
+			<form className='flex flex-col items-center justify-center flex-grow w-4/5'>
 				<Image
 					src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png'
 					height={100}
@@ -67,19 +67,11 @@ export default function Home() {
 				</div>
 
 				<div className='flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4'>
-					<button
-						onClick={() => {
-							search;
-						}}
-						className='btn'>
+					<button onClick={search} className='btn'>
 						Google Search
 					</button>
 
-					<button
-						onClick={() => {
-							search;
-						}}
-						className='btn'>
+					<button onClick={search} className='btn'>
 						I'm Feeling Lucky
 					</button>
 				</div>
