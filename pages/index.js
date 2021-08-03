@@ -26,6 +26,7 @@ export default function Home() {
 					{/* Icon */}
 
 					{/* Avatar */}
+					<Avatar url='https://compassionate-leakey-e9b16b.netlify.app/images/IG_Sonny.jpeg' />
 				</div>
 			</header>
 		</div>
