@@ -23,7 +23,7 @@ const Header = () => {
 			<div className='flex w-full p-6 items-center'>
 				<Image
 					className='cursor-pointer'
-					src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png'
+					src='https://cdn.vox-cdn.com/thumbor/elWgLc36nmAT5U-i8aIaYR14LRc=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/12795665/VRG_ILLO_2927_007.jpg'
 					height={50}
 					width={150}
 					onClick={() => router.push("/")}
