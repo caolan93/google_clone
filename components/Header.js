@@ -3,6 +3,7 @@ import Image from "next/Image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 import Avatar from "./Avatar";
+import HeadersOptions from "./HeadersOptions";
 
 const Header = () => {
 	const router = useRouter();
@@ -53,6 +54,7 @@ const Header = () => {
 					url='https://compassionate-leakey-e9b16b.netlify.app/images/IG_Sonny.jpeg'
 				/>
 			</div>
+			<HeadersOptions />
 		</header>
 	);
 };
