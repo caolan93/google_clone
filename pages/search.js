@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Header from "../components/Header";
-import HeadersOptions from "../components/HeadersOptions";
 import SearchResults from "../components/SearchResults";
 
 import { useRouter } from "next/router";
@@ -11,17 +10,18 @@ import Response from "../Response";
 function Search({ results }) {
 	console.log(results);
 	const router = useRouter();
+
 	return (
 		<div>
 			<Head>
-				<title>Search Results</title>
+				<title>{router.query.term} - Google Search</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
 			{/* Header */}
 			<Header />
 			{/* Search Results */}
-			<SearchResults />
+			<SearchResults results={results} />
 		</div>
 	);
 }
