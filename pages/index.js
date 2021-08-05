@@ -55,6 +55,7 @@ export default function Home() {
 					src='https://cdn.vox-cdn.com/thumbor/elWgLc36nmAT5U-i8aIaYR14LRc=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/12795665/VRG_ILLO_2927_007.jpg'
 					height={100}
 					width={300}
+					alt='profile picture'
 				/>
 				<div className='flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center'>
 					<SearchIcon className='h-5 mr-3' />
