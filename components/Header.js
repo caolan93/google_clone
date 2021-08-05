@@ -27,6 +27,7 @@ const Header = () => {
 					src='https://cdn.vox-cdn.com/thumbor/elWgLc36nmAT5U-i8aIaYR14LRc=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/12795665/VRG_ILLO_2927_007.jpg'
 					height={50}
 					width={150}
+					alt='google image'
 					onClick={() => router.push("/")}
 				/>
 				<form className='flex flex-grow px-6 py-3 ml-10 mr-5 borderborder-gray-200 rounded-full shadow-lg max-w-3xl items-center'>
